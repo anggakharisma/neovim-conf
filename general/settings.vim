@@ -35,6 +35,8 @@ set updatetime=300                      " Faster completion
 set timeoutlen=500                      " By default timeoutlen is 1000 ms
 set formatoptions-=cro                  " Stop newline continution of comments
 set clipboard=unnamedplus               " Copy paste between vim and everything else
+set number relativenumber
+set nu rnu
 "set autochdir                           " Your working directory will always
 "be the same as your working directory
 "
