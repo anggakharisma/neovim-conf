@@ -23,4 +23,6 @@ call plug#begin('~/.vim/plugged')
   Plug 'marlonfan/coc-phpls', {'do': 'yarn install --frozen-lockfile'}
   Plug 'iamcco/coc-tailwindcss', {'do': 'yarn install --frozen-lockfile'}
   Plug 'neoclide/coc-yaml', {'do': 'yarn install --frozen-lockfile'}
+  Plug 'dart-lang/dart-vim-plugin'
+  Plug 'hankchiutw/flutter-reload.vim'
 call plug#end()
