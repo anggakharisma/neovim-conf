@@ -74,4 +74,6 @@ if has('persistent_undo')
 endif
 let g:indentLine_char = '|'
 
+highlight clear SignColumn
+
 
