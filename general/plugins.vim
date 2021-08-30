@@ -31,4 +31,5 @@ call plug#begin('~/.vim/plugged')
   Plug 'hrsh7th/vim-vsnip-integ'
   Plug 'Neevash/awesome-flutter-snippets'
   Plug 'Yggdroot/indentLine'
+  Plug 'thosakwe/vim-flutter'
 call plug#end()
