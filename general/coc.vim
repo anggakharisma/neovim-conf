@@ -159,4 +159,6 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 if isdirectory('./node_modules') && isdirectory('./node_modules/prettier')
   let g:coc_global_extensions += ['coc-prettier']
 endif
+
 hi! CocErrorSign guifg=#d1666a
+hi Pmenu ctermbg=black ctermfg=white
