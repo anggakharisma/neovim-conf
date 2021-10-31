@@ -37,4 +37,5 @@ call plug#begin('~/.vim/plugged')
   Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
   Plug 'joshdick/onedark.vim'
   Plug 'mangeshrex/uwu.vim'
+  Plug 'evanleck/vim-svelte', {'branch': 'main'}
 call plug#end()
