@@ -4,10 +4,10 @@ call plug#begin('~/.vim/plugged')
   Plug 'peitalin/vim-jsx-typescript'
   Plug 'pangloss/vim-javascript'
   Plug 'vim-airline/vim-airline'
+  Plug 'vim-airline/vim-airline-themes'
   Plug 'chemzqm/vim-jsx-improve'
   Plug 'preservim/nerdtree'
   Plug 'ryanoasis/vim-devicons'
-  Plug 'airblade/vim-gitgutter'
   Plug 'tpope/vim-fugitive'
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
   Plug 'junegunn/fzf.vim'
@@ -32,4 +32,9 @@ call plug#begin('~/.vim/plugged')
   Plug 'Neevash/awesome-flutter-snippets'
   Plug 'Yggdroot/indentLine'
   Plug 'thosakwe/vim-flutter'
+  Plug 'kyazdani42/nvim-web-devicons'
+  Plug 'romgrk/barbar.nvim'
+  Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+  Plug 'joshdick/onedark.vim'
+  Plug 'mangeshrex/uwu.vim'
 call plug#end()
