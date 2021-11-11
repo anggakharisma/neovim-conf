@@ -1,6 +1,4 @@
 {
-  "eslint.autoFixOnSave": true,
-  "eslint.filetypes": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
   "coc.preferences.formatOnSaveFiletypes": [
     "javascript",
     "javascriptreact",
@@ -32,6 +30,5 @@
                 }
             }
         }
-    },
-    "svelte.enable-ts-plugin": true
+    }
 }

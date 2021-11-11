@@ -38,4 +38,5 @@ call plug#begin('~/.vim/plugged')
   Plug 'joshdick/onedark.vim'
   Plug 'mangeshrex/uwu.vim'
   Plug 'evanleck/vim-svelte', {'branch': 'main'}
+  Plug 'lifepillar/vim-solarized8'
 call plug#end()
