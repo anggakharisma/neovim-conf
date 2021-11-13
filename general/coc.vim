@@ -161,4 +161,4 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 " endif
 
 hi! CocErrorSign guifg=#d1666a
-hi Pmenu ctermbg=black ctermfg=white
+hi! Pmenu ctermbg=black ctermfg=white
