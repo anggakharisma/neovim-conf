@@ -81,3 +81,5 @@ augroup CustomCursorLine
     au ColorScheme * :hi clear CursorLine
     au ColorScheme * :hi! CursorLine gui=underline cterm=underline
 augroup END
+let g:indentLine_setConceal = 0
+
