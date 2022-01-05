@@ -12,14 +12,13 @@ hi Comment cterm=italic
 " let g:onedark_termcolors=256
 
 syntax on
-colorscheme solarized8
-
-
+" colorscheme nord
+" colorscheme gruvbox
 " checks if your terminal has 24-bit color support
 if (has("termguicolors"))
-    set termguicolors
+    " set termguicolors
     hi LineNr ctermbg=NONE guibg=NONE
 endif
 
-autocmd vimenter * ++nested colorscheme solarized8
+" autocmd vimenter * ++nested colorscheme solarized8
 

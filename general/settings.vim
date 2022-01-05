@@ -83,3 +83,5 @@ augroup CustomCursorLine
 augroup END
 let g:indentLine_setConceal = 0
 
+set signcolumn=no
+

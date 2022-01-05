@@ -34,9 +34,8 @@ call plug#begin('~/.vim/plugged')
   Plug 'thosakwe/vim-flutter'
   Plug 'kyazdani42/nvim-web-devicons'
   Plug 'romgrk/barbar.nvim'
-  Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
-  Plug 'joshdick/onedark.vim'
-  Plug 'mangeshrex/uwu.vim'
   Plug 'evanleck/vim-svelte', {'branch': 'main'}
   Plug 'lifepillar/vim-solarized8'
+  Plug 'morhetz/gruvbox'
+  Plug 'arcticicestudio/nord-vim'
 call plug#end()
