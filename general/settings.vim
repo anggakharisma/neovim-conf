@@ -82,9 +82,10 @@ augroup CustomCursorLine
     au ColorScheme * :hi! CursorLine gui=underline cterm=underline
 augroup END
 let g:indentLine_setConceal = 0
-
-set signcolumn=no
 let g:airline_symbols = {}
+
+highlight clear SignColumn
+set signcolumn=number
 
 let g:airline_left_sep = ''                                            
 let g:airline_left_alt_sep = ''                                        

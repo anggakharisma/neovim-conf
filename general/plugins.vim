@@ -36,5 +36,6 @@ call plug#begin('~/.vim/plugged')
   Plug 'evanleck/vim-svelte', {'branch': 'main'}
   Plug 'lifepillar/vim-solarized8'
   Plug 'morhetz/gruvbox'
+  Plug 'airblade/vim-gitgutter'
   Plug 'arcticicestudio/nord-vim'
 call plug#end()
