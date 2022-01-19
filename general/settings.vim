@@ -74,3 +74,27 @@ if has('persistent_undo')
     set undofile
 endif
 let g:indentLine_char = '|'
+
+set cursorline
+augroup CustomCursorLine
+    au!    
+    au ColorScheme * :hi clear CursorLine
+    au ColorScheme * :hi! CursorLine gui=underline cterm=underline
+augroup END
+let g:indentLine_setConceal = 0
+let g:airline_symbols = {}
+
+highlight clear SignColumn
+set signcolumn=number
+
+let g:airline_left_sep = ''                                            
+let g:airline_left_alt_sep = ''                                        
+let g:airline_right_sep = ''                                           
+let g:airline_right_alt_sep = ''                                       
+let g:airline_symbols.branch = ''                                      
+let g:airline_symbols.colnr = ' :'                                                                                                                                                                                
+let g:airline_symbols.readonly = ''                                       
+let g:airline_symbols.linenr = ' :'                                    
+let g:airline_symbols.maxlinenr = '☰ '                          
+let g:airline_symbols.dirty='⚡'
+
