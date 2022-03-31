@@ -5,6 +5,10 @@
     "typescript",
     "typescriptreact"
   ],
+  "emmet.includeLanguages": {
+    "vue-html": "html",
+    "javascript": "javascriptreact"
+  },
   "tsserver.formatOnType": true,
   "coc.preferences.formatOnType": true,
   "flutter.provider.enableSnippet": true,
