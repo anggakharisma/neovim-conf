@@ -1,6 +1,5 @@
 " set leader key
 let g:mapleader = ","
-
 syntax enable                           " Enables syntax highlighing
 set hidden                              " Required to keep multiple buffers open multiple buffers
 set nowrap                              " Display long lines as just one line
@@ -98,3 +97,14 @@ let g:airline_symbols.linenr = ' :'
 let g:airline_symbols.maxlinenr = '☰ '                          
 let g:airline_symbols.dirty='⚡'
 
+" Remove tilde file
+set fillchars=eob:\ 
+
+set foldmethod=syntax
+setlocal foldlevelstart=99
+set fillchars+=vert:\ 
+
+highlight VertSplit cterm=NONE
+hi VertSplit cterm=NONE
+highlight VertSplit gui=reverse guifg=NONE
+hi Vertsplit gui=NONE guibg=fg guifg=bg
