@@ -108,3 +108,6 @@ highlight VertSplit cterm=NONE
 hi VertSplit cterm=NONE
 highlight VertSplit gui=reverse guifg=NONE
 hi Vertsplit gui=NONE guibg=fg guifg=bg
+
+highlight CocErrorFloat ctermfg=White ctermBg=Blue guibg=#34898c guifg=#ffffff 
+" highlight CocFloating ctermfg=White ctermbg=Blue guibg=#34898c guifg=#ffffff
