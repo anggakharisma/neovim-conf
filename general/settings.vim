@@ -111,3 +111,4 @@ hi Vertsplit gui=NONE guibg=fg guifg=bg
 
 highlight CocErrorFloat ctermfg=Red ctermBg=Blue guibg=#293462 guifg=#e30202
 highlight CocFloating ctermfg=White ctermbg=Blue guibg=#293462 guifg=#ffffff
+highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
