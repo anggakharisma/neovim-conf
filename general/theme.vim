@@ -12,7 +12,7 @@ hi Comment cterm=italic
 " let g:onedark_termcolors=256
 
 syntax on
-" colorscheme nord
+syntax enable
 " colorscheme gruvbox
 " checks if your terminal has 24-bit color support
 if (has("termguicolors"))
