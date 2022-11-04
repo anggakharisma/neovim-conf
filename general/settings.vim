@@ -47,12 +47,8 @@ au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm
 cmap w!! w !sudo tee %
 
 autocmd StdinReadPre * let s:std_in=1
-command! -bang -nargs=* Rg
-  \ call fzf#vim#grep(
-  \   'rg --column --line-number --hidden --ignore-case --no-heading --color=always '.shellescape(<q-args>), 1,
-  \   <bang>0 ? fzf#vim#with_preview({'options': '--delimiter : --nth 4..'}, 'up:60%')
-  \           : fzf#vim#with_preview({'options': '--delimiter : --nth 4..'}, 'right:50%:hidden', '?'),
-  \   <bang>0)
+
+
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 " Put plugins and dictionaries in this dir (also on Windows)
@@ -115,3 +111,14 @@ hi Vertsplit gui=NONE guibg=fg guifg=bg
 " highlight CocErrorFloat ctermfg=Red ctermBg=Blue guibg=#293462 guifg=#e30202
 " highlight CocFloating ctermfg=White ctermbg=Blue guibg=#293462 guifg=#ffffff
 highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
+
+
+function! RipgrepFzf(query, fullscreen)
+  let command_fmt = 'rg --column --line-number --no-heading --color=always --smart-case -- %s || true'
+  let initial_command = printf(command_fmt, shellescape(a:query))
+  let reload_command = printf(command_fmt, '{q}')
+  let spec = {'options': ['--phony', '--query', a:query, '--bind', 'change:reload:'.reload_command]}
+  call fzf#vim#grep(initial_command, 1, fzf#vim#with_preview(spec), a:fullscreen)
+endfunction
+
+command! -nargs=* -bang RG call RipgrepFzf(<q-args>, <bang>0)

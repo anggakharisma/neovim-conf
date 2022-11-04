@@ -45,7 +45,6 @@ nnoremap <Leader>o o<Esc>^Da
 nnoremap <Leader>O O<Esc>^Da
 
 map <leader>nn :NERDTreeToggle<CR>
-map <leader>f :FZF -i<CR>
 nnoremap <leader>g :Rg<Cr>
 nnoremap <leader>p :Prettier<Cr>
 imap <expr> <C-j>   vsnip#available(1)  ? '<Plug>(vsnip-expand)'         : '<C-j>'

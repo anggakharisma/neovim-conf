@@ -6,34 +6,29 @@
     "typescriptreact"
   ],
   "emmet.includeLanguages": {
+    "html": "html",
     "vue-html": "html",
     "javascript": "javascriptreact"
   },
-  "tsserver.formatOnType": true,
   "coc.preferences.formatOnType": true,
   "flutter.provider.enableSnippet": true,
   "languageserver": {
-        "ccls": {
-            "command": "ccls",
-            "filetypes": [
-                "c",
-                "cpp",
-                "objc",
-                "objcpp"
-            ],
-            "rootPatterns": [
-                ".ccls",
-                "compile_commands.json",
-                ".vim/",
-                ".git/",
-                ".hg/"
-            ],
-            "initializationOptions": {
-                "cache": {
-                    "directory": "/tmp/ccls"
-                }
-            }
+    "ccls": {
+      "command": "ccls",
+      "filetypes": ["c", "cpp", "objc", "objcpp"],
+      "rootPatterns": [
+        ".ccls",
+        "compile_commands.json",
+        ".vim/",
+        ".git/",
+        ".hg/"
+      ],
+      "initializationOptions": {
+        "cache": {
+          "directory": "/tmp/ccls"
         }
-    },
-    "svelte.enable-ts-plugin": true
+      }
+    }
+  },
+  "svelte.enable-ts-plugin": true
 }
