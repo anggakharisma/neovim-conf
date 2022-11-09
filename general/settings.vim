@@ -99,14 +99,14 @@ set fillchars=eob:\
 set foldmethod=syntax
 setlocal foldlevelstart=99
 
-set fillchars+=vert:\ 
-hi Vertsplit ctermfg=None ctermbg=None
+" set fillchars+=vert:\ 
+" hi Vertsplit ctermfg=None ctermbg=None
 
 
-highlight VertSplit cterm=NONE
-hi VertSplit cterm=NONE
-highlight VertSplit gui=reverse guifg=NONE
-hi Vertsplit gui=NONE guibg=fg guifg=bg
+" highlight VertSplit cterm=NONE
+" hi VertSplit cterm=NONE
+" highlight VertSplit gui=reverse guifg=NONE
+" hi Vertsplit gui=NONE guibg=fg guifg=bg
  
 " highlight CocErrorFloat ctermfg=Red ctermBg=Blue guibg=#293462 guifg=#e30202
 " highlight CocFloating ctermfg=White ctermbg=Blue guibg=#293462 guifg=#ffffff

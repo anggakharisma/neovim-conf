@@ -5,6 +5,7 @@
     "typescript",
     "typescriptreact"
   ],
+  "diagnostic.checkCurrentLine": true,
   "emmet.includeLanguages": {
     "html": "html",
     "vue-html": "html",
