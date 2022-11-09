@@ -24,7 +24,7 @@ set smartindent                         " Makes indenting smart
 set autoindent                          " Good auto indent
 set laststatus=0                        " Always display the status line
 set number                              " Line numbers
-set cursorline                          " Enable highlighting of the current line
+" set cursorline                          " Enable highlighting of the current line
 set background=dark                     " tell vim what the background color looks like
 
 set showtabline=2                       " Always show tabs
@@ -71,11 +71,14 @@ endif
 let g:indentLine_char = '|'
 
 set cursorline
-augroup CustomCursorLine
-    au!    
-    au ColorScheme * :hi clear CursorLine
-    au ColorScheme * :hi! CursorLine gui=underline cterm=underline
-augroup END
+hi CursorLine term=bold cterm=bold guibg=Grey40
+
+" set cursorline
+" augroup CustomCursorLine
+"     au!    
+" au ColorScheme * :hi clear CursorLine
+"   au ColorScheme * :hi! CursorLine gui=underline cterm=underline
+" augroup END
 let g:indentLine_setConceal = 0
 let g:airline_symbols = {}
 
@@ -111,6 +114,7 @@ setlocal foldlevelstart=99
 " highlight CocErrorFloat ctermfg=Red ctermBg=Blue guibg=#293462 guifg=#e30202
 " highlight CocFloating ctermfg=White ctermbg=Blue guibg=#293462 guifg=#ffffff
 highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
+highlight CursorLine cterm=NONE ctermbg=black ctermfg=NONE
 
 
 function! RipgrepFzf(query, fullscreen)
