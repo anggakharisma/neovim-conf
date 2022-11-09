@@ -14,9 +14,9 @@ hi Comment cterm=italic
 " colorscheme gruvbox
 " checks if your terminal has 24-bit color support
 if (has("termguicolors"))
-    " set termguicolors
-    " hi LineNr ctermbg=NONE guibg=NONE
+     set termguicolors
+     "hi LineNr ctermbg=NONE guibg=NONE
 endif
 
-
-hi Pmenu guibg=Grey ctermbg=NONE ctermfg=NONE
+hi Pmenu guibg=NONE guifg=NONE ctermbg=NONE ctermfg=NONE
+hi PmenuSel guibg=NONE guifg=NONE ctermbg=NONE ctermfg=NONE

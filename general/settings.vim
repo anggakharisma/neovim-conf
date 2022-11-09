@@ -24,7 +24,6 @@ set smartindent                         " Makes indenting smart
 set autoindent                          " Good auto indent
 set laststatus=0                        " Always display the status line
 set number                              " Line numbers
-" set cursorline                          " Enable highlighting of the current line
 set background=dark                     " tell vim what the background color looks like
 
 set showtabline=2                       " Always show tabs
@@ -70,15 +69,6 @@ if has('persistent_undo')
 endif
 let g:indentLine_char = '|'
 
-set cursorline
-hi CursorLine term=bold cterm=bold guibg=Grey40
-
-" set cursorline
-" augroup CustomCursorLine
-"     au!    
-" au ColorScheme * :hi clear CursorLine
-"   au ColorScheme * :hi! CursorLine gui=underline cterm=underline
-" augroup END
 let g:indentLine_setConceal = 0
 let g:airline_symbols = {}
 
@@ -102,20 +92,10 @@ set fillchars=eob:\
 set foldmethod=syntax
 setlocal foldlevelstart=99
 
-" set fillchars+=vert:\ 
-" hi Vertsplit ctermfg=None ctermbg=None
-
-
-" highlight VertSplit cterm=NONE
-" hi VertSplit cterm=NONE
-" highlight VertSplit gui=reverse guifg=NONE
-" hi Vertsplit gui=NONE guibg=fg guifg=bg
+set fillchars+=vert:\ 
+hi Vertsplit ctermfg=12 ctermbg=black
  
-" highlight CocErrorFloat ctermfg=Red ctermBg=Blue guibg=#293462 guifg=#e30202
-" highlight CocFloating ctermfg=White ctermbg=Blue guibg=#293462 guifg=#ffffff
 highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
-highlight CursorLine cterm=NONE ctermbg=black ctermfg=NONE
-
 
 function! RipgrepFzf(query, fullscreen)
   let command_fmt = 'rg --column --line-number --no-heading --color=always --smart-case -- %s || true'
@@ -127,3 +107,7 @@ function! RipgrepFzf(query, fullscreen)
 endfunction
 
 command! -nargs=* -bang RG call RipgrepFzf(<q-args>, <bang>0)
+
+set cursorline
+"hi CursorLine guibg=black guifg=red ctermbg=black ctermfg=NONE
+hi CursorLine gui=underline cterm=underline guibg=NONE
