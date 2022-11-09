@@ -5,12 +5,14 @@
     "typescript",
     "typescriptreact"
   ],
-  "diagnostic.checkCurrentLine": true,
   "emmet.includeLanguages": {
     "html": "html",
     "vue-html": "html",
     "javascript": "javascriptreact"
   },
+  "diagnostic.checkCurrentLine": true,
+  "diagnostic.virtualText": true,
+  "diagnostic.virtualTextCurrentLineOnly": false,
   "coc.preferences.formatOnType": true,
   "flutter.provider.enableSnippet": true,
   "languageserver": {
