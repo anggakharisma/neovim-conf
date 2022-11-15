@@ -19,4 +19,4 @@ if (has("termguicolors"))
 endif
 
 hi Pmenu guibg=NONE guifg=NONE ctermbg=NONE ctermfg=NONE
-hi PmenuSel guibg=NONE guifg=NONE ctermbg=NONE ctermfg=NONE
+hi PmenuSel guibg=black guifg=white ctermbg=black ctermfg=NONE

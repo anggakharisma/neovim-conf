@@ -109,5 +109,5 @@ endfunction
 command! -nargs=* -bang RG call RipgrepFzf(<q-args>, <bang>0)
 
 set cursorline
-"hi CursorLine guibg=black guifg=red ctermbg=black ctermfg=NONE
-hi CursorLine gui=underline cterm=underline guibg=NONE
+hi CursorLine guibg=black guifg=NONE
+"hi CursorLine gui=underline cterm=underline guibg=NONE
