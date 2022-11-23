@@ -72,8 +72,10 @@ let g:indentLine_char = '|'
 let g:indentLine_setConceal = 0
 let g:airline_symbols = {}
 
-highlight clear SignColumn
-set signcolumn=number
+" highlight clear SignColumn
+" set signcolumn=number
+
+hi SignColumn guibg=NONE
 
 let g:airline_left_sep = ''                                            
 let g:airline_left_alt_sep = ''                                        
@@ -109,5 +111,5 @@ endfunction
 command! -nargs=* -bang RG call RipgrepFzf(<q-args>, <bang>0)
 
 set cursorline
-hi CursorLine guibg=black guifg=NONE
+hi CursorLine guibg=#063b42 guifg=NONE
 "hi CursorLine gui=underline cterm=underline guibg=NONE
