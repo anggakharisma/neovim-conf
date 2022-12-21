@@ -112,4 +112,5 @@ command! -nargs=* -bang RG call RipgrepFzf(<q-args>, <bang>0)
 
 set cursorline
 hi CursorLine guibg=#063b42 guifg=NONE
+hi Visual guibg=#252e47 guifg=NONE'
 "hi CursorLine gui=underline cterm=underline guibg=NONE
