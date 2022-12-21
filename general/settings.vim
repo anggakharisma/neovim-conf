@@ -95,7 +95,6 @@ set foldmethod=syntax
 setlocal foldlevelstart=99
 
 set fillchars+=vert:\ 
-hi Vertsplit ctermfg=12 ctermbg=black
  
 highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
 
@@ -112,5 +111,8 @@ command! -nargs=* -bang RG call RipgrepFzf(<q-args>, <bang>0)
 
 set cursorline
 hi CursorLine guibg=#063b42 guifg=NONE
-hi Visual guibg=#252e47 guifg=NONE'
-"hi CursorLine gui=underline cterm=underline guibg=NONE
+hi Visual guibg=#095d68 guifg=NONE
+hi VertSplit guifg=#004f63 guibg=#004f63 gui=NONE
+
+hi Pmenu guibg=NONE guifg=NONE ctermbg=NONE ctermfg=NONE
+hi PmenuSel guibg=#60ff60 guifg=black ctermbg=NONE ctermfg=NONE
