@@ -37,10 +37,10 @@ require'nvim-treesitter.configs'.setup {
 }
 
 vim.opt.termguicolors = true
-vim.cmd [[highlight IndentBlanklineIndent1 guifg=#004556 gui=nocombine]]
-vim.cmd [[highlight IndentBlanklineIndent2 guifg=#E5C07B gui=nocombine]]
+vim.cmd [[highlight IndentBlanklineIndent1 guifg=#0c4e60 guifg=#004556 gui=nocombine]]
 
 vim.opt.list = true
+
 
 require("indent_blankline").setup {
     space_char_blankline = " ",
@@ -48,5 +48,7 @@ require("indent_blankline").setup {
         "IndentBlanklineIndent1",
     },
 }
+
+require'colorizer'.setup()
 
 EOF

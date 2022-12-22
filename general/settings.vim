@@ -1,4 +1,4 @@
-" set leader key
+" set leader key 
 let g:mapleader = ","
 syntax enable                           " Enables syntax highlighing
 set hidden                              " Required to keep multiple buffers open multiple buffers
@@ -36,7 +36,7 @@ set formatoptions-=cro                  " Stop newline continution of comments
 set clipboard=unnamedplus               " Copy paste between vim and everything else
 set number relativenumber
 set nu rnu
-"set autochdir                           " Your working directory will always
+set autochdir                           " Your working directory will always
 "be the same as your working directory
 "
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm
@@ -67,9 +67,7 @@ if has('persistent_undo')
     let &undodir = myUndoDir
     set undofile
 endif
-let g:indentLine_char = '|'
 
-let g:indentLine_setConceal = 0
 let g:airline_symbols = {}
 
 " highlight clear SignColumn
@@ -77,15 +75,15 @@ let g:airline_symbols = {}
 
 hi SignColumn guibg=NONE
 
-let g:airline_left_sep = ''                                            
-let g:airline_left_alt_sep = ''                                        
-let g:airline_right_sep = ''                                           
-let g:airline_right_alt_sep = ''                                       
-let g:airline_symbols.branch = ''                                      
-let g:airline_symbols.colnr = ' :'                                                                                                                                                                                
-let g:airline_symbols.readonly = ''                                       
-let g:airline_symbols.linenr = ' :'                                    
-let g:airline_symbols.maxlinenr = '☰ '                          
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+let g:airline_symbols.branch = ''
+let g:airline_symbols.colnr = ' :'
+let g:airline_symbols.readonly = ''
+let g:airline_symbols.linenr = ' :'
+let g:airline_symbols.maxlinenr = '☰ '
 let g:airline_symbols.dirty='⚡'
 
 " Remove tilde line
