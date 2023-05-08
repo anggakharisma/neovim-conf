@@ -46,7 +46,7 @@ map <leader>nn :NERDTreeToggle<CR>
 map <leader>po :foldopen<CR>
 map <leader>pc :foldclose<CR>
 nnoremap <leader>ff :FZF -i<Cr>
-nnoremap <leader>fg :Rg<Cr>
+nnoremap <leader>fg :RG<Cr>
 nnoremap <leader>p :Prettier<Cr>
 imap <expr> <C-j>   vsnip#available(1)  ? '<Plug>(vsnip-expand)'         : '<C-j>'
 imap <expr> <C-l>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<C-l>'
