@@ -1,22 +1,14 @@
-if (has("autocmd") && !has("gui_running"))
-  augroup colorset
-    autocmd!
-  "   let s:white = { "gui": "#ABB2BF", "cterm": "145", "cterm16" : "7" }
-  "  autocmd ColorScheme * call onedark#set_highlight("Normal", { "fg": s:white }) " `bg` will not be styled since there is no `bg` setting
-  augroup END
-endif
+set termguicolors
 
 hi Comment cterm=italic
-" let g:onedark_hide_endofbuffer=1
-" let g:onedark_terminal_italics=1
-" let g:onedark_termcolors=256
 
-" colorscheme gruvbox
-" checks if your terminal has 24-bit color support
-if (has("termguicolors"))
-     set termguicolors
-     "hi LineNr ctermbg=NONE guibg=NONE
-endif
+let g:solarized_italic_comments = v:true
+let g:solarized_italic_keywords = v:true
+let g:solarized_italic_functions = v:true
+let g:solarized_italic_variables = v:false
+let g:solarized_contrast = v:true
+let g:solarized_borders = v:false
+let g:solarized_disable_background = v:false
 
-hi Pmenu guibg=NONE guifg=NONE ctermbg=NONE ctermfg=NONE
-hi PmenuSel guibg=#60ff60 guifg=black ctermbg=NONE ctermfg=NONE
+" Load the colorsheme
+ colorscheme NeoSolarized

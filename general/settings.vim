@@ -104,11 +104,3 @@ function! RipgrepFzf(query, fullscreen)
 endfunction
 
 command! -nargs=* -bang RG call RipgrepFzf(<q-args>, <bang>0)
-
-set cursorline
-hi CursorLine guibg=#063b42 guifg=NONE
-hi Visual guibg=#095d68 guifg=NONE
-hi VertSplit guifg=#013b4a guibg=#013b4a gui=NONE
-
-hi Pmenu guibg=NONE guifg=NONE ctermbg=NONE ctermfg=NONE
-hi PmenuSel guibg=#60ff60 guifg=black ctermbg=NONE ctermfg=NONE

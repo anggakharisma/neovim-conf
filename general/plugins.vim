@@ -33,11 +33,11 @@ call plug#begin('~/.vim/plugged')
   Plug 'kyazdani42/nvim-web-devicons'
   Plug 'romgrk/barbar.nvim'
   Plug 'evanleck/vim-svelte', {'branch': 'main'}
-  Plug 'lifepillar/vim-solarized8'
   Plug 'morhetz/gruvbox'
   Plug 'airblade/vim-gitgutter'
   Plug 'arcticicestudio/nord-vim'
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
   Plug 'lukas-reineke/indent-blankline.nvim'
   Plug 'norcalli/nvim-colorizer.lua'
+  Plug 'overcache/NeoSolarized'
 call plug#end()
