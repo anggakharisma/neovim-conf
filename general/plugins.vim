@@ -40,4 +40,5 @@ call plug#begin('~/.vim/plugged')
   Plug 'lukas-reineke/indent-blankline.nvim'
   Plug 'norcalli/nvim-colorizer.lua'
   Plug 'rebelot/kanagawa.nvim'
+  Plug 'rafamadriz/neon'
 call plug#end()
