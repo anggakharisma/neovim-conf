@@ -1,11 +1,5 @@
 {
   "java.jdt.ls.vmargs": "-javaagent:/home/angga/lombok.jar",
-  "coc.preferences.formatOnSaveFiletypes": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
-  ],
   "emmet.includeLanguages": {
     "html": "html",
     "vue-html": "html",
@@ -14,9 +8,9 @@
   "diagnostic.checkCurrentLine": true,
   "diagnostic.virtualText": true,
   "diagnostic.virtualTextCurrentLineOnly": false,
-  "coc.preferences.formatOnType": true,
   "javascript.suggest.autoImports": true, 
   "typescript.suggest.autoImports": true,
+  "coc.preferences.formatOnSave": false,
   "flutter.provider.enableSnippet": true,
   "languageserver": {
     "ccls": {
@@ -36,5 +30,4 @@
       }
     }
   },
-  "svelte.enable-ts-plugin": true
 }
