@@ -39,6 +39,5 @@ call plug#begin('~/.vim/plugged')
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
   Plug 'lukas-reineke/indent-blankline.nvim'
   Plug 'norcalli/nvim-colorizer.lua'
-  Plug 'overcache/NeoSolarized'
   Plug 'rebelot/kanagawa.nvim'
 call plug#end()

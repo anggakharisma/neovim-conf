@@ -45,6 +45,7 @@ nnoremap <Leader>O O<Esc>^Da
 map <leader>nn :NERDTreeToggle<CR>
 map <leader>po :foldopen<CR>
 map <leader>pc :foldclose<CR>
+nnoremap <C-n> :NERDTreeToggle<CR>
 nnoremap <leader>ff :FZF -i<Cr>
 nnoremap <leader>fg :RG<Cr>
 nnoremap <leader>p :Format<Cr>
